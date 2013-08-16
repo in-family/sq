@@ -1,79 +1,117 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#DataContent tr").each(function(i){this.style.backgroundColor=['#ffffff','#fcfcf3'][i%2]});
+    $("#DataContent tr").hover(
+	    function(){
+            $(this).addClass("hover");
+        },
+        function () {
+            $(this).removeClass("hover");
+        }
+    );
+});
+ 
+</script>
+</head>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Sq : sq admin" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Sq</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/junfamily/sq">View on GitHub</a>
-
-          <h1 id="project_title">Sq</h1>
-          <h2 id="project_tagline">sq admin</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/junfamily/sq/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/junfamily/sq/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+<body>
+<div id="hd">
+    <h1 class="logo"><a href="javascript:void(0)"><img src="images/logo.gif" alt="" /></a></h1>
+    <div class="info">
+        <p class="bold">2009年10月26日 星期五 乙丑年六月初六</p>
+        <p class="font14px">姓名:<a  class="bold" style="color:#f0ff00;text-decoration:underline;" href="javascript:void(0)">花蝴蝶</a> | 工号:<span class="bold">007</span> | 负责区域:<span class="bold">白云小区</span></p>
     </div>
+</div><!--hd End-->
+<div id="bd">
+    <div id="sidebar">
+        <div id="title"><h2>功能分类管理</h2></div>
+        <ul id="nav">
+            <li><a class="close" href="javascript:void(0)"></a><h3>信息管理</h3></li>
+            <li><a class="open" href="javascript:void(0)"></a><h3>住户管理</h3>
+                <dl class="subnav">
+                    <dd><a class="subnav_0201" href="javascript:void(0)"></a></dd>
+                    <dd><a class="subnav_0202" href="javascript:void(0)"></a></dd>
+                    <dd><a class="subnav_0203" href="javascript:void(0)"></a></dd>
+                    <dd><a class="subnav_0204" href="javascript:void(0)"></a></dd>
+                </dl><!--subnav End-->
+            </li>
+            <li><a class="close" href="javascript:void(0)"></a><h3>统计查询</h3></li>
+            <li><a class="close" href="javascript:void(0)"></a><h3>系统设置</h3></li>
+        </ul><!--nav End-->
+        <a class="btn_loginOut" href="javascript:void(0)">退出系统</a>
+    </div><!--sidebar End-->
+    <div id="main">
+        <div id="content">
+            <div id="crumbs">
+                <a href="javascript:void(0)">首页</a> &gt;&gt;
+                <a href="javascript:void(0)">住户管理</a> &gt;&gt;
+                <a href="javascript:void(0)">住户登记</a> &gt;&gt;
+                <a class="current" href="javascript:void(0)">基本信息</a>
+            </div><!--crumbs End-->
+            <div class="tips">
+                你正在查看社区住户信息，修改请点击<span style="color:#0079db;text-decoration:underline;">"修改"</span>
+            </div><!--tips End-->
+            <div id="DataContent">
+                <table class="GridView" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <th scope="col">事实上</th>
+                        <th scope="col">实打实</th>
+                        <th scope="col">实打实</th>
+                        <th scope="col">首都师大</th>
+                        <th scope="col">是党的</th>
+                        <th scope="col">山多地少</th>
+                        <th scope="col">操作</th>
+                    </tr>
+                    <tr>
+                        <td>sdfsdfsdf</td>
+                        <td>sdfsdfsdf</td>
+                        <td>sdfsdfsdf</td>
+                        <td>sdfsdfsdf</td>
+                        <td>sdfsdfsdf</td>
+                        <td>sdfsdfsdf</td>
+                        <td>
+                            <a class="edit" href="javascript:void(0)">修改</a>
+                            <a class="del" href="javascript:void(0)">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>sdfsdfsdf</td>
+                        <td>sdfsdfsdf</td>
+                        <td>sdfsdfsdf</td>
+                        <td>sdfsdfsdf</td>
+                        <td>sdfsdfsdf</td>
+                        <td>sdfsdfsdf</td>
+                        <td>
+                            <a class="edit" href="javascript:void(0)">修改</a>
+                            <a class="del" href="javascript:void(0)">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>sdfsdfsdf</td>
+                        <td>sdfsdfsdf</td>
+                        <td>sdfsdfsdf</td>
+                        <td>sdfsdfsdf</td>
+                        <td>sdfsdfsdf</td>
+                        <td>sdfsdfsdf</td>
+                        <td>
+                            <a class="edit" href="javascript:void(0)">修改</a>
+                            <a class="del" href="javascript:void(0)">删除</a>
+                        </td>
+                    </tr>
+                </table>
+            </div><!--DataContent End-->
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Sq maintained by <a href="https://github.com/junfamily">junfamily</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+   
+            
+        </div><!--content End-->
+    </div><!--main End-->
+</div><!--bd End-->
+</body>
 </html>
